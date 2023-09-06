@@ -11,11 +11,23 @@
 
     //PROCESSAMENTO
     let inteiros = [];
+    let positivos = [];
+    let lista = inteiros.concat(positivos)
     for (let item of listaDeNumeros){
-        if(item d)
+        if(item % 1 === 0){
+            inteiros.push(item)
+        }
+        else if(item > 0){
+            positivos.push(item)
+        }
     }
 
 
+
     //SAÍDA
+    alert(`Foram localizados ${inteiros.length} Numeros inteiros são eles: ${inteiros.join(", ")} \n Foram localizados ${positivos.length} Numeros positivos são eles: ${positivos.join(", ")} ` )
+
+    
+    
 
 </script>
